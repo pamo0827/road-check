@@ -1,0 +1,19 @@
+{
+  "manifest_version": 3,
+  "name": "道路橋DB Excel一括ダウンローダー",
+  "version": "1.1",
+  "description": "道路橋データベースのページから点検表（Excelファイル）を一括でダウンロードします。",
+  "permissions": [
+    "activeTab",
+    "scripting"
+  ],
+  "host_permissions": [
+    "https://road-structures-db-bridge.mlit.go.jp/*"
+  ],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "action": {
+    "default_popup": "popup.html"
+  }
+}
